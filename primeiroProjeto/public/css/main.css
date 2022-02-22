@@ -1,0 +1,91 @@
+.test {
+    background-color: #6b7280;
+    font-size: 30px;
+    margin: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+    grid-template-areas: "logo header"
+                         "menu content";
+}
+
+.logo-wrapper {
+    flex: 1;
+    grid-area: logo;
+    background-color: #00f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header-wrapper {
+    flex: 1;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu-wrapper{
+
+    border-top: 2px solid #00000030;
+    flex: 1;
+    grid-area: menu;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+.menu-item{
+    background-color: #2d3748;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.menu-item:hover{
+    background-color: #465670;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.content-component-wrapper {
+    height: 100%;
+    flex: 1;
+    grid-area: content;
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00f;
+    overflow-x: hidden;
+}
+
+.example {
+    width: 270px;
+    height: 270px;
+
+    background-color: #4a5568;
+
+    margin: 10px;
+}
