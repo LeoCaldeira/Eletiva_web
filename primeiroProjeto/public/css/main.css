@@ -23,7 +23,6 @@ body, html {
 .logo-wrapper {
     flex: 1;
     grid-area: logo;
-    background-color: #00f;
 
     display: flex;
     justify-content: center;
@@ -32,7 +31,13 @@ body, html {
 
     margin: 20px;
     border-radius: 10px;
+}
+
+img {
+    width: 150px;
+    heigh: 150px;
     cursor: pointer;
+
 }
 
 .header-wrapper {
@@ -49,7 +54,6 @@ body, html {
 
 .menu-wrapper{
 
-    border-top: 2px solid #00000030;
     flex: 1;
     grid-area: menu;
     padding-top: 10px;
@@ -77,15 +81,17 @@ body, html {
 
     display: flex;
     flex-wrap: wrap;
-    background-color: #00f;
     overflow-x: hidden;
+    margin: 10px 0;
 }
 
 .example {
     width: 270px;
     height: 270px;
 
-    background-color: #4a5568;
+    background-color: #2d3748;
 
     margin: 10px;
+    margin-top: 0;
+    border-radius: 8px;
 }

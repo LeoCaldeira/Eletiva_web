@@ -14,7 +14,7 @@
     </head>
     <body class="content-wrapper">
         <div class="logo-wrapper">
-            Logo
+            <img src="/assets/lion.png" alt="logo" className="logo">
         </div>
         <div class="header-wrapper">
             Nome da loja bonitão aqui :D
